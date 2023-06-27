@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+
+ <style>
+
+        #body
+        {
+
+             background-color:  rgb(255, 183, 27);
+              background-image: url('addpeople.jpg');
+            
+        }
+        #divB
+        {
+            text-align: center;
+            
+            margin-left: 450px;
+            margin-right: 700px;
+            margin-top: 150px;
+            border: 1px solid white;
+            width: 35%;
+           
+            background-color: grey;
+           
+
+           
+        }
+        
+       .allbuttons
+        {
+        color: white;
+            width: 170px;
+            height: 30px;
+           background-color: blue;
+            border: none;
+        
+        }
+        
+         	.allbuttons:hover {
+		
+		cursor:pointer;
+		color:orange;
+	
+			}
+        
+
+       </style>
+</head>
+<body id=body>
+
+<div id=divB>
+
+
+ <h3>Add Thing Information</h3>
+<form action=" AddthingController" method="post">
+   
+        <label >coustomer_id</label>
+        <input type="text" name="coustomerName" placeholder=" coustomerName"> <br> <br>
+        <label >turd_id </label>
+        <input type="text" name="truf_id"  placeholder="trufGround"> <br> <br>
+       
+        <label >booking</label>
+        <input type="Date" name=booking_date"  placeholder="date"><br> <br>
+        <label >Start</label>
+        <input type="Time" name=Start_time"  placeholder="Time"><br> <br>
+        <label >End</label>
+        <input type="Time" name=end_time"  placeholder="End_time"><br> <br>
+        
+       
+        
+    
+        <input type="submit" name="Add thing" class="allbuttons">
+        <input type="reset" name="Reset" class="allbuttons">
+        
+            </form>
+
+
+
+
+</form>
+</body>
+</html>

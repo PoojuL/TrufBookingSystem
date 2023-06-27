@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+ <style>
+
+        #body
+        {
+
+             background-color:  rgb(255, 183, 27);
+              background-image: url('sports-g825246b98_640.jpg');
+              background-repeat: no-repeat;
+            background-size: 100%
+            
+        }
+        #divB
+        {
+            text-align: center;
+            
+            margin-left: 450px;
+            margin-right: 700px;
+            margin-top: 150px;
+            border: 1px solid white;
+            width: 35%;
+           
+            background-color: grey;
+           }
+		
+		.allbuttons
+        {
+        color: white;
+            width: 170px;
+            height: 30px;
+           background-color: blue;
+            border: none;
+        
+        }
+        	.allbuttons:hover {
+		
+		cursor:pointer;
+		color:orange;
+	
+			}
+        
+     </style>
+</head>
+<body id=body>
+
+<div id=divB>
+
+ <h3>Contact as</h3>
+<form action="addmindController" method="post">
+
+  <label >Your Name</label>
+        <input type="text" name="fullName" placeholder="Your Name"> <br> <br>
+        <label >Your email</label>
+        <input type="email" name="email"  placeholder="Your email"> <br> <br>
+        <label>your location</label>
+        
+       <input type="Location" name="location" placeholder="your location"><br><br>
+       
+        <label>Add PriceList</label>
+        <input type="text" name="PriceList" placeholder="Add price list"><br><br>
+        <label>Add Visits</label>
+        <input type="text" name="Visits" placeholder="view visits"><br><br>
+        
+        <label >Your contact</label>
+        <input type="text" name="phone"  placeholder="Your phone"><br> <br>
+        <label >Truf_Servces</label>
+        <select name ="Services">
+          
+            <option value="Parking">Parking </option>
+            <option value="Food_tasting">Food_tasting</option>
+            <option value="Exercise">Exercise </option>
+            <option value="Playground">Playground </option>
+         </select><br> <br>
+        
+        
+         <label >Your idType</label>
+        <select name ="idType">
+          
+            <option value="Aadhar Card">Aadhar Card </option>
+            <option value="PAN Card">PAN Card </option>
+            <option value="Driving License">Driving License </option>
+            
+            </select><br> <br>
+        
+       
+        <label >Your_id_Number</label>
+        <input type="text" name="idNumber"  placeholder="Your id Number"><br> <br>
+       
+        <input type="submit" name="Add People" class="allbuttons">
+        <input type="reset" name="Reset" class="allbuttons">
+        
+
+
+</form>
+</body>
+</html>
